@@ -1,2 +1,2 @@
-# SolucionesMedicasHedrnandezReyes
+# SolucionesMedicasHernandezReyes
 curso coderHouse
