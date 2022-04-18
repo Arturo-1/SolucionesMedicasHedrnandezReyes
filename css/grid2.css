@@ -1,0 +1,649 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #4D4D4D;
+}
+
+
+/* ESTRUCTURA GRID PANTALLA GRID TAMAÑO GRANDE*/
+
+@media (min-width: 940px) {
+    .contenedor {
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "header header header header" "img-back img-back img-back img-back" "main main main aside" "main main main aside" "footer footer footer footer";
+    }
+    .contenedor .header {
+        background: blue;
+        grid-column-start: header;
+        grid-column-end: header;
+    }
+    .contenedor .img-back {
+        grid-area: img-back
+    }
+    .contenedor footer {
+        grid-area: footer;
+    }
+    .contenedor main {
+        grid-column-start: main;
+        grid-column-end: main;
+    }
+    .contenedor aside {
+        grid-area: aside;
+    }
+}
+
+
+/* FIN ESTRUCTURA GRID PANTTALLA GRID TAMAÑO*/
+
+
+/* ESTRUCTURA GRID PANTALLA INDEX TAMAÑO GRANDE */
+
+@media (min-width: 940px) {
+    .GridIndex {
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "header header header header" "imgindex imgindex imgindex imgindex" "main main main main " "footer footer footer footer";
+    }
+    .GridIndex .header {
+        grid-column-start: header;
+        grid-column-end: header;
+    }
+    .GridIndex .img-index {
+        grid-area: imgindex;
+    }
+    .GridIndex main {
+        grid-column-start: main;
+        grid-column-end: main;
+    }
+    .GridIndex footer {
+        grid-column-start: footer;
+        grid-column-end: footer;
+    }
+    .img-index {
+        background-image: url('../imagenes/valor-bg-02.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 700px;
+    }
+}
+
+.img-index {
+    background-image: url('../imagenes/valor-bg-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+
+/* FIN ESTRUCTURA GRID PANTTALLA GRID */
+
+
+/* ESTILOS HEADER NAVBAR GENERAL */
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #b8bfc7;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+}
+
+img.img-resp {
+    width: 150px;
+    height: auto;
+}
+
+.img-toggle {
+    max-width: 100%;
+}
+
+.toggle-menu {
+    position: absolute;
+    width: 800px;
+    right: 1rem;
+    top: 0.5rem;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+header .logo-nav {
+    position: fixed;
+    background: rgba(184, 191, 199, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li a {
+    color: rgb(19, 15, 15);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+li.nav-item {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+li.nav-item2 {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+ul li a.nav-link:hover {
+    border-bottom: 5px;
+    border-bottom: solid rgb(17, 70, 17);
+    transform: scale(1.1);
+    transition: all 1, ease-in;
+}
+
+.toggle-menu1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2px 0;
+    font-size: 2rem;
+    background-color: white;
+    border: none;
+    color: grey;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in;
+    text-align: right;
+}
+
+header .toggle-menu1:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input#menu {
+    display: none;
+}
+
+.toggle-menu1 {
+    display: none;
+}
+
+.toggle-menu2 {
+    display: none;
+}
+
+
+/* FIN ESTILOS HEADER NAVBAR */
+
+
+/* ESTILOS GENERALES FOOTER */
+
+.sec-foo {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(89, 92, 91);
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; */
+    color: #ffffff;
+    padding: 30px 30px 30px 30px;
+    gap: 30px;
+}
+
+.titleCfOO {
+    margin-bottom: 10px;
+}
+
+.redes {
+    margin: 5px 0 7px;
+    display: inline-block;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+.con-sec-foo2 {
+    text-align: center;
+}
+
+
+/* FIN ESTILOS GENERALES FOOTER */
+
+
+/* ESTILOS SECTION IMAGEN PANTALLA GRID*/
+
+.img-back {
+    background-image: url('../imagenes/img-fon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700PX;
+}
+
+
+/* FIN ESTILOS SECTION IMAGEN */
+
+
+/* ESTILOS SECTION IMAGEN PANTALLA INDEX*/
+
+
+/* FIN ESTILOS SECTION IMAGEN */
+
+
+/* ESTILOS MAIN GENERAL*/
+
+.text-principal {
+    padding: 10px;
+}
+
+.tittle {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.parrafo {
+    text-align: justify;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.sol-med {
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.optionTitle {
+    margin-block: 1.5rem;
+}
+
+.option {
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+}
+
+.text-img {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.sidebar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title-aside {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.text-aside {
+    margin: 20px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.img-style {
+    max-width: 100%;
+}
+
+.img-baby {
+    max-width: 100%;
+}
+
+.img-style:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.img-fondo {
+    padding: 20px;
+    background-color: #13191a;
+}
+
+.parrafo2 {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+
+/* estilos pantalla index tamaño grande */
+
+.secService {
+    background-color: rgb(221, 221, 230);
+}
+
+.paddingBot {
+    padding-top: 30px;
+}
+
+.paddingBot2 {
+    padding-bottom: 30px;
+}
+
+.paddingBotContacto {
+    padding-top: 80px;
+}
+
+.sec-img-title {
+    text-align: center;
+}
+
+.sec-img {
+    text-align: center;
+}
+
+.tam-text {
+    font-size: 50px;
+}
+
+.marginDiv {
+    margin: 40px 0 0px 0px;
+}
+
+.div-flex {
+    padding-top: 20px;
+    display: flex;
+}
+
+.img-fluid {
+    width: 250px;
+    height: auto;
+}
+
+.img-fluid2 {
+    width: 200px;
+    height: auto;
+}
+
+.text-img {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.marBtn {
+    margin-bottom: 40px;
+    border-color: 3px solid #03041b;
+    color: #ffffff;
+    width: 33.33%;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+/* terminan estilos pantalla index tamaño grande */
+
+
+/* FIN ESTILOS MAIN */
+
+
+/* FIN ESTILOS FOOTER */
+
+
+/* GRID PARA VERSION MEDIANAS PANTALLA GRID  */
+
+@media screen and (max-width: 768px) {
+    header .nav-item {
+        display: none;
+    }
+    header .toggle-menu1 {
+        display: block;
+    }
+    header nav {
+        display: none;
+    }
+    .menu-nav {
+        display: none;
+    }
+    .nav-item2 {
+        display: none;
+    }
+    .toggle-menu1 {
+        margin-right: 30px;
+    }
+}
+
+
+/* QUERY PARA VERSION MOVIL DE PANTALLA GRID  */
+
+@media (max-width: 640px) {
+    .contenedor {
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "header " "img-back" "main " "aside" "footer";
+    }
+    header nav {
+        display: none;
+    }
+    .menu-nav {
+        display: none;
+    }
+    .nav.nav-item2 {
+        display: none;
+    }
+    .toggle-menu1 {
+        margin-right: 30px;
+    }
+    .sol-med {
+        display: flex;
+        display: block;
+    }
+    .sec-foo {
+        display: flex;
+        display: block;
+        background-color: rgb(89, 92, 91);
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+        color: #ffffff;
+        padding: 30px 30px 30px 30px;
+        gap: 30px;
+    }
+    .foo-style {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .redes {
+        display: block;
+        text-align: center;
+    }
+    .titleCfOO {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "header " "img-index" "main " "aside" "footer";
+    }
+    header nav {
+        display: none;
+    }
+    .menu-nav {
+        display: none;
+    }
+    .nav.nav-item2 {
+        display: none;
+    }
+    .toggle-menu1 {
+        margin-right: 30px;
+    }
+    .sol-med {
+        display: flex;
+        display: block;
+    }
+    .sec-foo {
+        display: flex;
+        display: block;
+        background-color: rgb(89, 92, 91);
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+        color: #ffffff;
+        padding: 30px 30px 30px 30px;
+        gap: 30px;
+    }
+    .foo-style {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .redes {
+        display: block;
+        text-align: center;
+    }
+    .titleCfOO {
+        text-align: center;
+    }
+}
+
+
+/* QUERY PARA VERSION MOVIL DE PANTALLA INDEX  */
+
+@media (max-width: 940px) {
+    .GridIndex {
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "header " "imgindex" "main " "footer";
+    }
+    header nav {
+        display: none;
+    }
+    .menu-nav {
+        display: none;
+    }
+    .nav.nav-item2 {
+        display: none;
+    }
+    .toggle-menu1 {
+        margin-right: 30px;
+    }
+    .sol-med {
+        display: flex;
+        display: block;
+    }
+    .sec-foo {
+        display: flex;
+        display: block;
+        background-color: rgb(89, 92, 91);
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+        color: #ffffff;
+        padding: 30px 30px 30px 30px;
+        gap: 30px;
+    }
+    .foo-style {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .redes {
+        display: block;
+        text-align: center;
+    }
+    .titleCfOO {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .GridIndex {
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: "header " "imgindex" "main " "footer";
+    }
+    .div-flex {
+        display: flex;
+        display: block;
+    }
+    .img-fluid {
+        width: 350px;
+        height: auto;
+    }
+    header nav {
+        display: none;
+    }
+    .menu-nav {
+        display: none;
+    }
+    .nav.nav-item2 {
+        display: none;
+    }
+    .toggle-menu1 {
+        margin-right: 30px;
+    }
+    .sol-med {
+        display: flex;
+        display: block;
+    }
+    .sec-foo {
+        display: flex;
+        display: block;
+        background-color: rgb(89, 92, 91);
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+        color: #ffffff;
+        padding: 30px 30px 30px 30px;
+        gap: 30px;
+    }
+    .foo-style {
+        margin-top: 15px;
+        text-align: center;
+    }
+    .redes {
+        display: block;
+        text-align: center;
+    }
+    .titleCfOO {
+        text-align: center;
+    }
+}
+
+
+/* TERMINA QUERY PARA VERSION MOVIL DE PANTALLA GRID  */
