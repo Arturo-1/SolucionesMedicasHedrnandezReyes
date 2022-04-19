@@ -318,10 +318,6 @@ section.relleno {
     max-width: 60%;
 }
 
-.img-baby {
-    max-width: 100%;
-}
-
 .img-style:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1)
