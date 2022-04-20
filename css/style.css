@@ -168,7 +168,6 @@
     .btn-primary:hover {
         background-color: #6099f0 !important;
         transition: background-color .5s !important;
-        color: #10112e !important;
         font-weight: bold !important;
     }
     
@@ -309,14 +308,16 @@
     /* END FOOTER */
     
     .img-style {
-        max-width: 100%;
-    }
-    
-    .img-baby {
-        max-width: 100%;
+        max-width: 60%;
     }
     
     .img-style:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1)
+    }
+    
+    @media(max-width: 640px) {
+        .div-flex {
+            display: block;
+        }
     }
