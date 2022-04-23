@@ -384,3 +384,22 @@ section.relleno {
         display: block;
     }
 }
+
+
+/* seccion de grid index */
+
+.grid-seccion {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    grid-template-areas: "sec-producto1 sec-producto2 sec-producto3"
+}
+
+@media(max-width: 640px) {
+    .grid-seccion {
+        grid-template-columns: 1fr;
+        display: block;
+        grid-gap: 40px;
+        grid-template-areas: "sec-producto1" "sec-producto2" "sec-producto3"
+    }
+}
