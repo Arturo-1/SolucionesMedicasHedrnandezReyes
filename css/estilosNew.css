@@ -1,0 +1,110 @@
+/*tipografia de texto*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  position: fixed;
+  z-index: 100; }
+  header .bg-dark a.nav-link {
+    color: #ffff !important; }
+  header nav img.navbar-brand {
+    margin-left: 20px;
+    width: 170px;
+    height: auto;
+    padding: 0 10px 0 0; }
+  header nav img.img-logo {
+    width: 170px;
+    height: auto;
+    padding: 0 10px 0 0; }
+  header nav ul li.nav-item {
+    margin-right: 10px;
+    margin-left: 10px; }
+  header nav ul li.nav-item2 {
+    margin-right: 40px;
+    margin-left: 40px; }
+  header nav ul li a.nav-link:hover {
+    text-shadow: 2px 2px 5px rgba(143, 238, 151, 0.5);
+    transform: scale(1.1);
+    transition: all 1, ease-in; }
+
+main {
+  color: #032550;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-color: #ffff; }
+  main section.secciones h1 {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 60px; }
+  main section.secciones h2 {
+    font-size: 190px; }
+  main section.secciones p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold; }
+  main section.secciones img.style-img {
+    width: 100%;
+    height: auto; }
+  main section.secciones .marginDiv {
+    margin: 40px 0 40px 0px; }
+  main section.secciones .secJustM {
+    text-align: justify;
+    margin: 5px; }
+  main section.secciones .tam-text {
+    font-size: 50px;
+    padding: auto; }
+  main section.secciones .secService {
+    background-color: #dddde6; }
+    main section.secciones .secService .sec-img {
+      text-align: center; }
+    main section.secciones .secService .grid-seccion {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 40px;
+      grid-template-areas: "sec-producto1 sec-producto2 sec-producto3"; }
+    @media (max-width: 640px) {
+      main section.secciones .secService .grid-seccion {
+        grid-template-columns: 1fr;
+        display: block;
+        grid-gap: 40px;
+        grid-template-areas: "sec-producto1" "sec-producto2" "sec-producto3"; } }
+    main section.secciones .secService .img-style {
+      max-width: 60%; }
+    main section.secciones .secService .img-style:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      animation-delay: 3s; }
+    main section.secciones .secService .paddingBot {
+      padding-top: 30px; }
+    main section.secciones .secService .marBtn {
+      margin-bottom: 40px;
+      border-color: 3px solid #03041b;
+      width: 33.33%; }
+    main section.secciones .secService .margin-title {
+      padding-top: 20px; }
+
+footer .backFoo {
+  background-color: #595c5b;
+  padding: 20px; }
+
+footer .inlineSec2 {
+  display: inline-block;
+  text-align: center; }
+
+footer .colorText {
+  color: #ffff; }
+
+footer .icon-soc {
+  margin: 10px 10px;
+  transition: all 300ms ease-in-out;
+  text-align: center; }
+
+footer .icon-soc:hover {
+  transform: scale(2) translateY(-2px);
+  color: #abccdb; }

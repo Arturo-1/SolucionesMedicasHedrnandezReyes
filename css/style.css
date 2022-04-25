@@ -1,5 +1,7 @@
 main {
     font-family: 'Poppins' !important;
+    margin: 0%;
+    padding: 0;
 }
 
 
@@ -214,7 +216,7 @@ main.login {
 }
 
 .style-img {
-    background-size: 100%;
+    background-image: 100%;
 }
 
 .fondoTitle {
