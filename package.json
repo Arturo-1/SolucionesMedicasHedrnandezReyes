@@ -1,0 +1,25 @@
+{
+    "name": "solucionesmedicashedrnandezreyes",
+    "version": "1.0.0",
+    "description": "curso coderHouse",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-css": "node-sass --include-path scss scss/estilos.scss css/estilosNew.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Arturo-1/SolucionesMedicasHedrnandezReyes.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Arturo-1/SolucionesMedicasHedrnandezReyes/issues"
+    },
+    "homepage": "https://github.com/Arturo-1/SolucionesMedicasHedrnandezReyes#readme",
+    "devDependencies": {
+        "node-sass": "^7.0.1",
+        "nodemon": "^2.0.15"
+    }
+}
