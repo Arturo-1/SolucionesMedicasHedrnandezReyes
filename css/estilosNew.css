@@ -1,9 +1,3 @@
-/*tipografia de texto*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-* {
-  margin: 0;
-  padding: 0; }
-
 header {
   background: rgba(0, 0, 0, 0.9);
   width: 100%;
@@ -11,12 +5,12 @@ header {
   z-index: 100; }
   header .bg-dark a.nav-link {
     color: #ffff !important; }
+    header .bg-dark a.nav-link:hover {
+      text-shadow: 2px 2px 5px rgba(143, 238, 151, 0.5);
+      transform: scale(1.1);
+      transition: all 1, ease-in; }
   header nav img.navbar-brand {
     margin-left: 20px;
-    width: 170px;
-    height: auto;
-    padding: 0 10px 0 0; }
-  header nav img.img-logo {
     width: 170px;
     height: auto;
     padding: 0 10px 0 0; }
@@ -26,10 +20,6 @@ header {
   header nav ul li.nav-item2 {
     margin-right: 40px;
     margin-left: 40px; }
-  header nav ul li a.nav-link:hover {
-    text-shadow: 2px 2px 5px rgba(143, 238, 151, 0.5);
-    transform: scale(1.1);
-    transition: all 1, ease-in; }
 
 main {
   color: #032550;
@@ -39,7 +29,6 @@ main {
   main section.secciones h1 {
     margin-top: 5px;
     margin-bottom: 30px;
-    text-align: center;
     font-size: 60px; }
   main section.secciones h2 {
     font-size: 190px; }
@@ -76,16 +65,18 @@ main {
         grid-template-areas: "sec-producto1" "sec-producto2" "sec-producto3"; } }
     main section.secciones .secService .img-style {
       max-width: 60%; }
-    main section.secciones .secService .img-style:hover {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-      animation-delay: 3s; }
+      main section.secciones .secService .img-style:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        animation-delay: 3s; }
     main section.secciones .secService .paddingBot {
       padding-top: 30px; }
     main section.secciones .secService .marBtn {
       margin-bottom: 40px;
       border-color: 3px solid #03041b;
       width: 33.33%; }
+      main section.secciones .secService .marBtn:hover {
+        background-color: #518ce4 !important; }
     main section.secciones .secService .margin-title {
       padding-top: 20px; }
 
@@ -104,7 +95,6 @@ footer .icon-soc {
   margin: 10px 10px;
   transition: all 300ms ease-in-out;
   text-align: center; }
-
-footer .icon-soc:hover {
-  transform: scale(2) translateY(-2px);
-  color: #abccdb; }
+  footer .icon-soc:hover {
+    transform: scale(2) translateY(-2px);
+    color: #abccdb; }

@@ -80,13 +80,6 @@ main.login {
     margin: 40px;
 }
 
-.btn-primary:hover {
-    /* background-color: #6099f0 !important;
-        transition: background-color .5s !important;
-        font-weight: bold !important; */
-    background-color: #518ce4 !important;
-}
-
 .titleSec {
     text-align: center;
     font-size: 60px;
