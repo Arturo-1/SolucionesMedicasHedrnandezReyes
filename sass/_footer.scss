@@ -1,0 +1,22 @@
+footer {
+    .backFoo {
+        background-color: rgb(89, 92, 91);
+        padding: 20px;
+    }
+    .inlineSec2 {
+        display: inline-block;
+        text-align: $A-Center;
+    }
+    .colorText {
+        color: #ffff;
+    }
+    .icon-soc {
+        margin: 10px 10px;
+        transition: all 300ms ease-in-out;
+        text-align: $A-Center;
+        &:hover {
+            transform: scale(2) translateY(-2px);
+            color: #abccdb;
+        }
+    }
+}

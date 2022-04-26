@@ -1,0 +1,32 @@
+header {
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    .bg-dark a.nav-link {
+        color: #ffff !important;
+        &:hover {
+            text-shadow: 2px 2px 5px rgba(143, 238, 151, 0.5);
+            transform: scale(1.1);
+            transition: all 1, ease-in;
+        }
+    }
+    nav {
+        img.navbar-brand {
+            margin-left: 20px;
+            width: 170px;
+            height: auto;
+            padding: 0 10px 0 0;
+        }
+        ul {
+            li.nav-item {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            li.nav-item2 {
+                margin-right: 40px;
+                margin-left: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+main {
+    color: #032550;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #ffff;
+    section.secciones {
+        h1 {
+            margin-top: 5px;
+            margin-bottom: 30px;
+            font-size: 60px;
+        }
+        h2 {
+            font-size: 190px;
+        }
+        p {
+            margin-top: 5px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        img.style-img {
+            width: 100%;
+            height: auto;
+        }
+        .marginDiv {
+            margin: 40px 0 40px 0px;
+        }
+        .secJustM {
+            text-align: $A-Justify;
+            margin: 5px;
+        }
+        .tam-text {
+            font-size: 50px;
+            padding: auto;
+        }
+        .secService {
+            background-color: $color-secService;
+            .sec-img {
+                text-align: $A-Center;
+            }
+            .grid-seccion {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 40px;
+                grid-template-areas: "sec-producto1 sec-producto2 sec-producto3"
+            }
+            @media(max-width: 640px) {
+                .grid-seccion {
+                    grid-template-columns: 1fr;
+                    display: block;
+                    grid-gap: 40px;
+                    grid-template-areas: "sec-producto1" "sec-producto2" "sec-producto3"
+                }
+            }
+            .img-style {
+                max-width: 60%;
+                &:hover {
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                    animation-delay: 3s;
+                }
+            }
+            .paddingBot {
+                padding-top: 30px;
+            }
+            .marBtn {
+                margin-bottom: 40px;
+                border-color: 3px solid #03041b;
+                width: 33.33%;
+                &:hover {
+                    background-color: $color-btn;
+                }
+            }
+            .margin-title {
+                padding-top: 20px;
+            }
+        }
+    }
+}
