@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Curso Desarrollo Web</title>
     <link rel="icon" type="image/gif" href="imagenes/favicon.png">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/estilosNew.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,8 +18,8 @@
     <!-- seccin navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <div class="container-fluid  colorNav ">
-                <img class="navbar-brand img-logo" src="imagenes/logo_genomi-k.png " alt="Logo de pagina"><span class="titleLogo colorNav"></span>
+            <div class="container-fluid">
+                <img class="navbar-brand img-logo" src="imagenes/logo_genomi-k.png " alt="Logo de pagina">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -37,7 +37,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="secciones">
             <!-- seccion titulo y imagen-->
             <br>
             <div class=" container-fluid">
@@ -65,29 +65,33 @@
         <div class="row divSec">
             <hr class="divSec">
         </div>
-
         <!-- seccion imagenes herramientas -->
-        <div class="container marginDiv paddingBot">
-            <div class="sec-img-title" class="row container-fluid">
-                <h2 class="sec-img tam-text"> Conoce Mas Sobre Nosotros</h2>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="secVideo">
-                    <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <section class="secciones container">
+            <div class=" marginDiv paddingBot">
+                <div class="sec-img-title" class="row container-fluid">
+                    <h2 class="sec-img tam-text"> Conoce Mas Sobre Nosotros</h2>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="secVideo">
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row divSec marginDiv">
-            <hr class="divSec">
-        </div>
+            <div class="row divSec marginDiv">
+                <hr class="divSec">
+            </div>
+
+        </section>
+
     </main>
     <footer class="bg-light text-center text-lg-start ">
-        <div class="row backFoo fondoFoo ">
+        <div class="row backFoo">
             <div class="col-lg-2  mb-4 mb-md-0 inlineSec2 ">
                 <h5 class=" text-uppercase colorText ">Conocenos</h5>
-                <div class="row ">
-                    <span class="colorText "><i class="icon-soc icon-foo fa fa-facebook " aria-hidden="true "></i>Facebook</span>
+
+                <div class="row color-text">
+                    <span class="colorText "><i class="icon-soc icon-foo fa fa-facebook-square " aria-hidden="true "></i>Facebook</span>
                     <span class="colorText "><i class="icon-soc icon-foo fa fa-instagram " aria-hidden="true "></i>Instagram</span>
 
                     <span class="colorText "><i class="icon-soc icon-foo fa fa-telegram " aria-hidden="true "></i> Telegram</span>

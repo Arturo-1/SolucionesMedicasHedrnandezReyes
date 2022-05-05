@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Curso Desarrollo Web</title>
     <link rel="icon" type="image/gif" href="imagenes/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/estilosNew.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,8 +18,8 @@
     <!-- seccin navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <div class="container-fluid  colorNav ">
-                <img class="navbar-brand img-logo" src="imagenes/logo_genomi-k.png " alt="Logo de pagina"><span class="titleLogo colorNav"></span>
+            <div class="container-fluid">
+                <img class="navbar-brand img-logo" src="imagenes/logo_genomi-k.png " alt="Logo de pagina">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -36,7 +37,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="secciones">
             <!-- seccion titulo y imagen-->
             <div class="container-fluid  ">
                 <div class=" paddingBotContacto ">
@@ -62,17 +63,16 @@
             <br>
             </div>
         </section>
-
         <!-- seccion imagenes herramientas -->
-        <section class="secService paddingBot">
-            <div class="container-fluid marginDiv">
-                <div class="">
-                    <h4 class="titleSec2">NUESTROS SERVICIOS</h4>
+        <section class="secciones ">
+            <div class="secService  marginDiv">
+                <div class="sec-img paddingBot row">
+                    <h2 class="tam-text tamano">Nuestros Servicios</h2>
                 </div>
                 <div class="row marginDiv ">
-                    <div class="grid-seccion ">
+                    <div class="grid-seccion">
                         <div class="sec-producto1">
-                            <div class=" sec-img ">
+                            <div class="sec-img">
                                 <div>
                                     <img src="imagenes/audi.png " alt="imagen HTML " class=" img-style">
                                     <p>Áudi-k® es un programa integral de tamiz auditivo que permite la detección e intervención oportuna de diferentes grados de hipoacusia.</p>
@@ -94,7 +94,7 @@
                             <div class="sec-img ">
                                 <div>
                                     <img src="imagenes/tami.png " alt="imagen java script " class="img-style">
-                                    <p>Támi-k® es un programa integral de tamiz metabólico para la detección e intervención temprana de enfermedades metabólicas.</p>
+                                    <p>Támi-k® es un programa integral de tamiz metabólico para la detección e intervención temprana de enfermedades metabólicas congenitas.</p>
                                 </div>
                                 <button class="btn btn-primary marBtn" title="Clic para mas informacion">Conoce Mas &nbsp;&nbsp; <i class="fa fa-arrow-right"></i></button>
                             </div>
@@ -103,64 +103,62 @@
                 </div>
             </div>
         </section>
-
-    </main>
-
-    <!-- seccion texto -->
-    <section>
-        <div class="container  ">
-            <div class="row padding-lat ">
-                <div class="col-md-12 marginDiv">
-                    <div class="sec-img marginDiv">
-                        <h2 class="detaCurso">BENEFICIOS DE NUESTRO SERVICIO</h2>
+        <!-- seccion texto -->
+        <section class="secciones">
+            <div class="container  ">
+                <div class="row padding-lat sec-service">
+                    <div class="col-md-12 marginDiv sec-table">
+                        <div class="sec-img marginDiv">
+                            <h2 class="detaCurso">BENEFICIOS DE NUESTRO SERVICIO</h2>
+                        </div>
+                        </table>
+                        <table class="table table-sm">
+                            <thead class="head-table">
+                                <tr>
+                                    <th width="5%">Item</th>
+                                    <th width="15%">herramienta</th>
+                                    <th width="65%">contenido</th>
+                                    <th width="15%">Duracion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>TEXTO</td>
+                                    <td>Tenologia que conforma el las etiquetas y estructura que contendra nuestra pagina</td>
+                                    <td>4 clases(8 horas)</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>TEXTO</td>
+                                    <td>Corresponde a los estilos que daran el diseño a nuestra pagina y permite la manipulacion de las etiquetas y como se muestra en nuestra pagina</td>
+                                    <td>4 clases(8 horas)</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>TEXTO</td>
+                                    <td>esta tecnologia se encarga de dar funcinalidad a nuestra pagina como son el manejo de la informacion, envio y uso de eventos que permitiran que nuestra pagina procese cientas acciones</td>
+                                    <td>4 clases(8 horas)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-                    </table>
-                    <table class="table table-sm">
-                        <thead class="head-table">
-                            <tr>
-                                <th width="5%">Item</th>
-                                <th width="15%">herramienta</th>
-                                <th width="65%">contenido</th>
-                                <th width="15%">Duracion</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>TEXTO</td>
-                                <td>Tenologia que conforma el las etiquetas y estructura que contendra nuestra pagina</td>
-                                <td>4 clases(8 horas)</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>TEXTO</td>
-                                <td>Corresponde a los estilos que daran el diseño a nuestra pagina y permite la manipulacion de las etiquetas y como se muestra en nuestra pagina</td>
-                                <td>4 clases(8 horas)</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>TEXTO</td>
-                                <td>esta tecnologia se encarga de dar funcinalidad a nuestra pagina como son el manejo de la informacion, envio y uso de eventos que permitiran que nuestra pagina procese cientas acciones</td>
-                                <td>4 clases(8 horas)</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                </div>
+                <div class="container marginDiv">
+                    <div class="d-grid gap-2 col-6 mx-auto ">
+                        <button class="btn btn-primary " type="button" href="contacto.html">Suscribirme</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container marginDiv">
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary " type="button" href="contacto.html">Suscribirme</button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer class="bg-light text-center text-lg-start ">
-        <div class="row backFoo fondoFoo ">
+        <div class="row backFoo">
             <div class="col-lg-2  mb-4 mb-md-0 inlineSec2 ">
                 <h5 class=" text-uppercase colorText ">Conocenos</h5>
-                <div class="row ">
+
+                <div class="row color-text">
                     <span class="colorText "><i class="icon-soc icon-foo fa fa-facebook-square " aria-hidden="true "></i>Facebook</span>
                     <span class="colorText "><i class="icon-soc icon-foo fa fa-instagram " aria-hidden="true "></i>Instagram</span>
 

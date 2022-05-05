@@ -1,0 +1,35 @@
+/*implementacion de map*/
+
+$color_text: ( color1: rgb(19, 107, 19), color2: rgb(28, 28, 168), color3: rgb(139, 29, 29));
+@each $col-text,
+$color in $color_text {
+    .color_#{$col-text} {
+        color: #{$color};
+    }
+}
+
+
+/*implementacion extend*/
+
+.btn-ak {
+    border: #0a58ca;
+    background-color: #0a58ca;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px rgba(black, 0.5);
+}
+
+.btn-ck {
+    @extend .btn-ak;
+    background-color: #157347;
+}
+
+.btn-tk {
+    @extend .btn-ak;
+    background-color: #bb2d3b;
+}
+
+
+/*implementacion mixin*/
