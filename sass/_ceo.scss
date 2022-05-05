@@ -33,3 +33,11 @@ $color in $color_text {
 
 
 /*implementacion mixin*/
+
+@mixin padding-top() {
+    padding-top: 30px;
+}
+
+.pruebaMixin {
+    @include padding-top;
+}

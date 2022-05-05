@@ -128,8 +128,6 @@ main {
       width: 33.33%; }
       main .secService .marBtn:hover {
         background-color: #518ce4 !important; }
-    main .secService .margin-title {
-      padding-top: 20px; }
 
 footer .backFoo {
   background-color: #595c5b;
@@ -177,3 +175,5 @@ footer .icon-soc {
   background-color: #bb2d3b; }
 
 /*implementacion mixin*/
+.pruebaMixin {
+  padding-top: 30px; }
