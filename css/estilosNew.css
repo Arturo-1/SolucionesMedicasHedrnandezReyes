@@ -26,59 +26,108 @@ main {
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   background-color: #ffff; }
-  main section.secciones h1 {
-    margin-top: 5px;
-    margin-bottom: 30px;
-    font-size: 60px; }
-  main section.secciones h2 {
-    font-size: 190px; }
-  main section.secciones p {
-    margin-top: 5px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold; }
-  main section.secciones img.style-img {
-    width: 100%;
-    height: auto; }
-  main section.secciones .marginDiv {
-    margin: 40px 0 40px 0px; }
-  main section.secciones .secJustM {
-    text-align: justify;
-    margin: 5px; }
-  main section.secciones .tam-text {
-    font-size: 50px;
-    padding: auto; }
-  main section.secciones .secService {
-    background-color: #dddde6; }
-    main section.secciones .secService .sec-img {
+  main section.secciones {
+    /* tabla pantalla servicio */ }
+    main section.secciones h1 {
+      margin-top: 5px;
+      margin-bottom: 30px;
+      font-size: 60px; }
+    main section.secciones p {
+      margin-top: 5px;
+      margin-bottom: 30px;
+      font-size: 20px; }
+    main section.secciones img.style-img {
+      width: 100%;
+      height: auto; }
+    main section.secciones .marginDiv {
+      margin: 40px 0 40px 0px; }
+    main section.secciones .secJustM {
+      text-align: justify;
+      margin: 5px; }
+    main section.secciones .tam-text {
+      font-size: 50px;
+      padding: auto; }
+    main section.secciones .paddTitle {
+      padding-left: 40px;
+      padding-right: 40px; }
+    main section.secciones .paddingBotContacto {
+      padding-top: 70px; }
+    main section.secciones .sec-img-title {
       text-align: center; }
-    main section.secciones .secService .grid-seccion {
+    main section.secciones .fondoTitle {
+      background-color: #e2eff5; }
+    main section.secciones .headerReg {
+      color: #1418e9; }
+    main section.secciones .paddingBot {
+      padding-top: 30px; }
+    main section.secciones .paddingBot2 {
+      padding-bottom: 30px; }
+    main section.secciones .detaCurso {
+      color: #817b7b !important; }
+    main section.secciones .sec-img {
+      text-align: center; }
+    main section.secciones div.sec-table .head-table {
+      background-color: #5a0505;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-delay: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      color: #ffff; }
+
+@keyframes example {
+  0% {
+    background-color: #5a0505; }
+  25% {
+    background-color: #575707; }
+  50% {
+    background-color: #0f0f5c; }
+  100% {
+    background-color: #064606; } }
+    main section.secciones .sec-info-video .secVideo {
+      text-align: center;
+      width: 1000px;
+      height: 700px;
+      position: relative;
+      padding: 5px;
+      margin-right: 100px; }
+    main section.secciones .sec-info-video .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%; }
+  main .secService {
+    background-color: #dddde6; }
+    main .secService .sec-img {
+      text-align: center; }
+    main .secService .grid-seccion {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 40px;
       grid-template-areas: "sec-producto1 sec-producto2 sec-producto3"; }
     @media (max-width: 640px) {
-      main section.secciones .secService .grid-seccion {
+      main .secService .grid-seccion {
         grid-template-columns: 1fr;
         display: block;
         grid-gap: 40px;
         grid-template-areas: "sec-producto1" "sec-producto2" "sec-producto3"; } }
-    main section.secciones .secService .img-style {
+    main .secService .img-style {
       max-width: 60%; }
-      main section.secciones .secService .img-style:hover {
+      main .secService .img-style:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
         animation-delay: 3s; }
-    main section.secciones .secService .paddingBot {
+    main .secService .paddingBot {
       padding-top: 30px; }
-    main section.secciones .secService .marBtn {
+    main .secService .marBtn {
       margin-bottom: 40px;
       border-color: 3px solid #03041b;
       width: 33.33%; }
-      main section.secciones .secService .marBtn:hover {
+      main .secService .marBtn:hover {
         background-color: #518ce4 !important; }
-    main section.secciones .secService .margin-title {
-      padding-top: 20px; }
 
 footer .backFoo {
   background-color: #595c5b;
@@ -98,3 +147,33 @@ footer .icon-soc {
   footer .icon-soc:hover {
     transform: scale(2) translateY(-2px);
     color: #abccdb; }
+
+/*implementacion de map*/
+.color_color1 {
+  color: #136b13; }
+
+.color_color2 {
+  color: #1c1ca8; }
+
+.color_color3 {
+  color: #8b1d1d; }
+
+/*implementacion extend*/
+.btn-ak, .btn-ck, .btn-tk {
+  border: #0a58ca;
+  background-color: #0a58ca;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+.btn-ck {
+  background-color: #157347; }
+
+.btn-tk {
+  background-color: #bb2d3b; }
+
+/*implementacion mixin*/
+.pruebaMixin {
+  padding-top: 30px; }

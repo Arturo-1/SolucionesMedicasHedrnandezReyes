@@ -1,0 +1,13 @@
+-- Se ajusta title de paginas para la correcta representacion de contenido.
+-- Se incluye etiquetas meta descripcion a las paginas.
+-- Se incluye keywords a las panytallas con palabras clave de referencia y orientacion de la pagina.
+-- Se agrega el ALT con la descripcion de las imagenes
+-- Uso de url cortas en proyecto
+-- Se ajusta el orden y aplica reglas en titulos de la pagina(H1 yH2)
+-- Se implementa sass a paginas de contacto, servico, e index. dejando grid y quienes somos para orientacion de funcionalidad.
+--se aplica lo solicitado(map, extend y mixin)
+
+
+enlcace para documento en drive
+
+https://docs.google.com/document/d/1rMQirvzbics8nh4S6zzBWoyJrbi0PgGrkrc29gzncBU/edit?usp=sharing
