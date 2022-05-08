@@ -276,7 +276,7 @@ main section p {
 /* FOOTER */
 
 .backFoo {
-    background-color: rgb(89, 92, 91);
+    background: radial-gradient(ellipse at top, #0c185c, transparent), radial-gradient(ellipse at bottom, #082950, transparent);
     padding: 20px;
 }
 
@@ -404,4 +404,19 @@ section.relleno {
         grid-gap: 40px;
         grid-template-areas: "sec-producto1" "sec-producto2" "sec-producto3"
     }
+}
+
+.sec-prop {
+    display: flex;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.prop1 {
+    background-color: #9194e1;
+}
+
+.prop2 {
+    background-color: #8aaede;
 }

@@ -41,3 +41,7 @@ $color in $color_text {
 .pruebaMixin {
     @include padding-top;
 }
+
+.divSec {
+    @include padding-top()
+}

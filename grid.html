@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/grid2.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- iMPLEMENTACION DE ETIQUETAS METAS PARA CEO -->
     <meta name="description" content="implemetacion de grid para el funcionamiento descciones en filas y cloumnas">
     <meta name="keywords" content="grid, estilos, poscicionamiento, css" />
@@ -37,7 +39,6 @@
                             <li class="nav-item"><a class="nav-link" href="quienessomos.html">¿Quienes Somos?</a></li>
                             <li class="nav-item"><a class="nav-link " href="servicio.html">Servicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                            <li class="nav-item"><a class="nav-link" href="grid.html">Grid</a></li>
                             <li class="nav-item2"><a class="nav-link" href="login.html">Login</a></li>
                         </ul>
                     </nav>
@@ -111,40 +112,38 @@
                 </p>
             </div>
         </aside>
-        <footer>
-            <div class=" sec-foo">
-                <div class="con-sec-foo foo-style">
-                    <h3 class="titleCfOO uno">Conocenos</h3>
-                    <div class="redes">
-                        <i class=" fa fa-facebook-square inline" aria-hidden="true "></i>
-                        <p class="inline">Facebook</p>
-                    </div>
-                    <div class="redes ">
-                        <i class=" fa fa-instagram inline" aria-hidden="true "></i>
-                        <p class="inline">Instagram</p>
-                    </div>
-                    <div class="redes">
-                        <i class=" fa fa-telegram inline" aria-hidden="true"></i>
-                        <p class="inline">Telegram</p>
-                    </div>
-                </div>
-                <div class=" con-sec-foo2 foo-style">
-                    <h3 class="titleCfOO dos">Footer text</h3>
-                    <div>
-                        <p class="">
-                            Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo consequuntur laudantium aut! Explicabo corporis perferendis, adipisci esse a inventore doloremque voluptatibus iste alias architecto officia, vero, quis ad nam illo! Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Ex, facilis doloribus illum laborum eligendi quo numquam maiores ducimus fugit in excepturi aliquam nesciunt quibusdam eum quam sed esse minima amet? Fugiat pariatur maxime quis
-                            culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!
-                        </p>
-                        <p>Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto. ay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones
-                            en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles.</p>
-                    </div>
+        <footer class="bg-light text-center text-lg-start ">
+            <div class="row backFoo">
+                <div class="col-lg-2  mb-4 mb-md-0 inlineSec2 ">
+                    <h5 class=" text-uppercase colorText ">Conócenos</h5>
 
+                    <div class="row color-text">
+                        <span class="colorText "><i class="icon-soc icon-foo fa fa-facebook-square " aria-hidden="true "></i>Facebook</span>
+                        <span class="colorText "><i class="icon-soc icon-foo fa fa-instagram " aria-hidden="true "></i>Instagram</span>
+
+                        <span class="colorText "><i class="icon-soc icon-foo fa fa-telegram " aria-hidden="true "></i> Telegram</span>
+                    </div>
                 </div>
-                <div class=" con-sec-foo3 foo-style">
-                    <h3 class="titleCfOO">conoce nuestras instalaciones</h3>
-                    <div class=" container-fluid ">
-                        <img class="" src="imagenes/img-map.jpg " alt="imagen de mapa " width="300px " height="100px ">
+                <div class="col-lg-7 mb-4 mb-md-0 inlineSec2 ">
+                    <h5 class="text-uppercase colorText ">Politica de Privacidad</h5>
+                    <p class="colorText ">
+                        Toda la información aquí proporcionada será manejada con estricta confidencialidad. Para más información, revise nuestro Aviso de Privacidad. Todos los derechos reservados®️. Responsable: Médico Arturo Reyes. Universidad de Monterrey. Cédula Profesional
+                        No. 45238962. Permiso de Publicidad: 4158762489005.
+                    </p>
+                    <p class="colorText ">Consulte a su médico, él es el único facultado para prescribir cualquier estudio de tamiz en el contexto clínico de cada paciente.</p>
+                    <p class="colorText ">
+                        Aviso de Privacidad.
+                    </p>
+                </div>
+                <div class="col-lg-3  mb-4 mb-md-0 inlineSec2 ">
+                    <h5 class="text-uppercase colorText ">Visita nuestras instalaciones</h5>
+                    <div class="container">
+                        <div class="boxMap container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.8499287507407!2d-100.34846168461279!3d25.676269018397086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866295fee461bbed%3A0x29af93a4848e1e3!2sMirador%20del%20obispado!5e0!3m2!1sen!2suy!4v1650643699088!5m2!1sen!2suy"
+                                width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                        <!-- <img class=" " src="imagenes/img-map.jpg " alt="imagen de mapa " width="300px " height="100px "> -->
                     </div>
                 </div>
             </div>
