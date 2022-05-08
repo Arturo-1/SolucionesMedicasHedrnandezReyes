@@ -1,6 +1,6 @@
 footer {
     .backFoo {
-        background-color: rgb(89, 92, 91);
+        background: radial-gradient(ellipse at top, #0c185c, transparent), radial-gradient(ellipse at bottom, #082950, transparent);
         padding: 20px;
     }
     .inlineSec2 {

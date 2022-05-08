@@ -41,6 +41,8 @@ main {
       height: auto; }
     main section.secciones .marginDiv {
       margin: 40px 0 40px 0px; }
+    main section.secciones .marginDiv2 {
+      margin: 20px 0 20px 0px; }
     main section.secciones .secJustM {
       text-align: justify;
       margin: 5px; }
@@ -66,6 +68,34 @@ main {
       color: #817b7b !important; }
     main section.secciones .sec-img {
       text-align: center; }
+    main section.secciones hr.divSec {
+      padding-right: 50px;
+      padding-left: 50px; }
+    main section.secciones .secPrincipal {
+      margin-top: 50px; }
+      main section.secciones .secPrincipal .sec-prop {
+        display: flex;
+        display: inline-block;
+        text-align: center; }
+      main section.secciones .secPrincipal .prop1 {
+        background-color: #9194e1; }
+      main section.secciones .secPrincipal .prop2 {
+        background-color: #8aaede; }
+    main section.secciones div.secVideo {
+      text-align: center;
+      width: 1000px;
+      height: 700px;
+      position: relative;
+      padding: 5px;
+      margin-right: 100px; }
+    main section.secciones .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%; }
     main section.secciones div.sec-table .head-table {
       background-color: #5a0505;
       animation-name: example;
@@ -84,21 +114,34 @@ main {
     background-color: #0f0f5c; }
   100% {
     background-color: #064606; } }
-    main section.secciones .sec-info-video .secVideo {
-      text-align: center;
-      width: 1000px;
-      height: 700px;
-      position: relative;
-      padding: 5px;
-      margin-right: 100px; }
-    main section.secciones .sec-info-video .responsive-iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
+  main .servicios-desc {
+    background-color: #ffff;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 40px; }
+    main .servicios-desc .clr {
+      color: #091f02; }
+    main .servicios-desc .grid-service hr {
+      align-items: center;
+      height: 10px;
       width: 100%;
-      height: 100%; }
+      background-color: black; }
+    main .servicios-desc .grid-service .text-def {
+      font-size: 20px; }
+    main .servicios-desc .grid-service .sub-desc {
+      font-size: 15px; }
+    main .servicios-desc .grid-service .service {
+      margin-bottom: 40px; }
+      main .servicios-desc .grid-service .service .etapa-ser .btn-center {
+        text-align: center;
+        align-items: center; }
+      main .servicios-desc .grid-service .service .etapa-ser .sec-proceso {
+        text-align: center; }
+        main .servicios-desc .grid-service .service .etapa-ser .sec-proceso .img-pro {
+          width: 120px;
+          height: 140px;
+          margin-bottom: 1rem;
+          margin-top: 1rem; }
   main .secService {
     background-color: #dddde6; }
     main .secService .sec-img {
@@ -130,7 +173,7 @@ main {
         background-color: #518ce4 !important; }
 
 footer .backFoo {
-  background-color: #595c5b;
+  background: radial-gradient(ellipse at top, #0c185c, transparent), radial-gradient(ellipse at bottom, #082950, transparent);
   padding: 20px; }
 
 footer .inlineSec2 {
@@ -176,4 +219,7 @@ footer .icon-soc {
 
 /*implementacion mixin*/
 .pruebaMixin {
+  padding-top: 30px; }
+
+.divSec {
   padding-top: 30px; }
