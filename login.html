@@ -9,8 +9,10 @@
 
     <title>Soluciones Medicas| Login</title>
     <link rel="icon" type="image/gif" href="imagenes/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilosNew.css">
+    <link rel="stylesheet" href="css/styleLogin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +25,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-            <div class="container-fluid  colorNav ">
-                <img class="navbar-brand img-logo" src="imagenes/logo_genomi-k.png " alt="Logo de pagina"><span class="titleLogo colorNav"></span>
+            <div class="container-fluid">
+                <img class="navbar-brand img-logo" src="imagenes/logo_genomi-k.png " alt="Logo de pagina">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -42,43 +44,23 @@
     </header>
 
     <main class="login">
-        <section class="relleno"></section>
-        <div class="container">
-            <div class="padre">
-                <div class="divlogin">
-                    <div class="row titleSec">
-                        <h2>Bienvenido</h2>
-                    </div>
-                    <form>
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 d-flex">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="email">Usuario:</label>
-                                            <input type="text" placeholder="Ingrese  Usuario" class="form-control" name="usuario" id="usuario">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="pwd">Contraseña:</label>
-                                            <input type="password" placeholder="Ingrese su Contraseña" class="form-control" name="contrasena" id="contrasena">
-                                            <a class="" style="color:blue; margin: 5px px;" title="Clic para recuperar contraseña"> Olvidaste tu contraseña?</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group paddingBot">
-                                    <button type="button" title="Clic para enviar formulario" class="btn btn-primary btn-lg">Enviar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <form action="">
+            <h1 class="title"> Sistema SM</h1>
+            <label>
+                <i class="fa fa-user ">&nbsp;</i>
+                <input placeholder="Nombre" type="text" id="username">
+            </label>
+            <label>
+                <i class="fa fa-lock">&nbsp;</i>
+                <input placeholder="Contraseña" type="password" id="password">
+            </label>
+            <a href="#" class="link">Recuperar Contraseña?</a>
 
-        </div>
+            <button id="button">Login</button>
+        </form>
 
-        </section>
-        <section class="relleno"></section>
+
     </main>
     <footer class="bg-light text-center text-lg-start ">
         <div class="row backFoo">
